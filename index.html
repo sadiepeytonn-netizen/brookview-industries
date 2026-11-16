@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Brookview Industries | Precision Trailer Wiring · Milverton, Ontario</title>
+<meta name="description" content="Brookview Industries builds custom wiring harnesses, LED lighting kits, breakaway safety kits and complete plug-and-play electrical kits for enclosed trailers. Milverton, Ontario." />
+<meta property="og:title" content="Brookview Industries | Precision Trailer Wiring" />
+<meta property="og:description" content="Wiring harnesses, LED lighting, breakaway kits and complete plug-and-play electrical kits for enclosed trailers. Built in Milverton, Ontario." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b111c'/%3E%3Cpath d='M9 7h8a5 5 0 0 1 0 10H9zM9 17h9a5 5 0 0 1 0 10H9z' fill='none' stroke='%23ff7a1a' stroke-width='3'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Archivo:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <a href="#top" class="brand" aria-label="Brookview Industries home">
+    <svg viewBox="0 0 32 32" class="brand-mark" aria-hidden="true"><path d="M8 5h9a5.5 5.5 0 0 1 0 11H8zM8 16h10a5.5 5.5 0 0 1 0 11H8z" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="8" cy="5" r="2.2" fill="#ff7a1a"/><circle cx="8" cy="27" r="2.2" fill="#ff7a1a"/></svg>
+    <span class="brand-text"><b>BROOKVIEW</b><small>INDUSTRIES</small></span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#tour">The Build</a>
+    <a href="#services">Services</a>
+    <a href="#kits">Complete Kits</a>
+    <a href="#process">Process</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <div class="nav-cta">
+    <a class="nav-phone" href="tel:+12267477684">226-747-7684</a>
+    <a class="btn btn-sm" href="#quote">Request a quote</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#tour">The Build</a><a href="#services">Services</a><a href="#kits">Complete Kits</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#quote">Request a quote</a>
+  <a href="tel:+12267477684" class="mm-phone">Call 226-747-7684</a>
+</div>
+
+<main id="top">
+
+<!-- ============ SCROLL TOUR ============ -->
+<section class="tour" id="tour" data-steps="7">
+  <div class="stage">
+    <canvas id="scene" aria-label="Interactive 3D model of an enclosed trailer with lighting and wiring"></canvas>
+    <div class="stage-vignette"></div>
+    <div class="stage-grain"></div>
+
+    <div class="hero-copy step" data-step="0">
+      <p class="eyebrow"><span class="dot"></span>Precision trailer wiring · Milverton, Ontario</p>
+      <h1>Wired right.<br/><span class="hl">Lit up.</span><br/>Ready to roll.</h1>
+      <p class="lede">Brookview Industries builds wiring harnesses, LED lighting and complete electrical kits for enclosed trailers, engineered to plug in and work the first time.</p>
+      <div class="cta-row">
+        <a href="#quote" class="btn">Request a quote</a>
+        <a href="#services" class="btn btn-ghost">What we build</a>
+      </div>
+    </div>
+
+    <article class="step card" data-step="1">
+      <p class="step-num">01 / Wiring harnesses</p>
+      <h2>The nervous system of every trailer.</h2>
+      <p>Custom harnesses built to your trailer's exact length and layout: colour-coded, loomed, sealed at every connection and continuity-tested before they leave the shop.</p>
+      <ul class="chips"><li>Cut to length</li><li>Sealed connectors</li><li>Protective sheathing</li><li>Bench tested</li></ul>
+    </article>
+
+    <article class="step card" data-step="2">
+      <p class="step-num">02 / LED lighting kits</p>
+      <h2>Every light, every circuit, all LED.</h2>
+      <p>Stop, turn and tail, clearance and ID bars, side markers and licence lighting, laid out properly and matched to the harness so nothing is guesswork.</p>
+      <ul class="chips"><li>Stop · Turn · Tail</li><li>Clearance &amp; ID</li><li>Side markers</li><li>Low current draw</li></ul>
+    </article>
+
+    <article class="step card" data-step="3">
+      <p class="step-num">03 / Breakaway safety kits</p>
+      <h2>If the hitch lets go, the brakes don't.</h2>
+      <p>Breakaway switch, lanyard, battery and charge line, pre-wired into the brake circuit so the trailer locks up on its own if it ever separates from the tow vehicle.</p>
+      <ul class="chips"><li>Switch &amp; lanyard</li><li>Breakaway battery</li><li>Charge line</li><li>Brake-circuit ready</li></ul>
+    </article>
+
+    <article class="step card" data-step="4">
+      <p class="step-num">04 / Plug &amp; play installation</p>
+      <h2>Connect it. Clip it. Done.</h2>
+      <p>Pre-terminated leads, labelled branches and a standard 7-way RV blade plug at the tongue. Kits drop in fast, whether you're building one trailer or a production line.</p>
+      <ul class="chips"><li>7-way RV blade</li><li>Pre-terminated</li><li>Labelled branches</li><li>Hours, not days</li></ul>
+    </article>
+
+    <article class="step card" data-step="5">
+      <p class="step-num">05 / Lighting &amp; power solutions</p>
+      <h2>Light the inside like you mean it.</h2>
+      <p>Interior LED strips, porch and load lights, switch panels and 12V battery systems with charge lines, so the trailer works for you after dark and away from the truck.</p>
+      <ul class="chips"><li>Interior LED</li><li>Porch &amp; load lights</li><li>12V battery boxes</li><li>Switch panels</li></ul>
+    </article>
+
+    <article class="step card" data-step="6">
+      <p class="step-num">06 / Complete kits</p>
+      <h2>One box. Everything. Matched to your trailer.</h2>
+      <p>Harness, lights, breakaway, plug and power, engineered together as one system and shipped as a complete kit. No sourcing from five suppliers. No mismatched parts.</p>
+      <a href="#quote" class="btn">Spec a complete kit</a>
+    </article>
+
+    <div class="stage-ui">
+      <div class="toggles" role="group" aria-label="Trailer lighting controls">
+        <button class="tgl on" data-toggle="lights" aria-pressed="true"><i></i>Lights</button>
+        <button class="tgl" data-toggle="hazards" aria-pressed="false"><i></i>Hazards</button>
+        <button class="tgl" data-toggle="xray" aria-pressed="false"><i></i>X-ray</button>
+      </div>
+      <p class="drag-hint">Drag to rotate</p>
+    </div>
+
+    <ol class="rail" aria-label="Tour progress">
+      <li data-go="0"><span>Intro</span></li>
+      <li data-go="1"><span>Harness</span></li>
+      <li data-go="2"><span>LED</span></li>
+      <li data-go="3"><span>Breakaway</span></li>
+      <li data-go="4"><span>Plug &amp; play</span></li>
+      <li data-go="5"><span>Power</span></li>
+      <li data-go="6"><span>Complete</span></li>
+    </ol>
+
+    <div class="scroll-cue"><span>Scroll to take the tour</span><i></i></div>
+    <div class="fallback" hidden><p>Your browser couldn't start the 3D view, but the rest of the site works fine.</p></div>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Wiring harnesses</span><b>✦</b><span>LED lighting kits</span><b>✦</b><span>Breakaway safety kits</span><b>✦</b><span>Plug &amp; play installation</span><b>✦</b><span>Trailer lighting</span><b>✦</b><span>Power solutions</span><b>✦</b><span>Complete kits</span><b>✦</b>
+    <span>Wiring harnesses</span><b>✦</b><span>LED lighting kits</span><b>✦</b><span>Breakaway safety kits</span><b>✦</b><span>Plug &amp; play installation</span><b>✦</b><span>Trailer lighting</span><b>✦</b><span>Power solutions</span><b>✦</b><span>Complete kits</span><b>✦</b>
+  </div>
+</div>
+
+<!-- ============ INTRO ============ -->
+<section class="intro wrap">
+  <p class="eyebrow">About Brookview</p>
+  <p class="big-statement reveal">We're an Ontario shop that does one thing obsessively well: <span class="hl">the electrical side of enclosed trailers.</span> From a single custom build to steady production runs, every harness and kit is designed, built and tested under one roof in Milverton.</p>
+  <div class="facts reveal">
+    <div><b>12V</b><span>Trailer lighting &amp; power systems</span></div>
+    <div><b>7-way</b><span>RV blade, ready at the tongue</span></div>
+    <div><b>100%</b><span>Of harnesses tested before shipping</span></div>
+    <div><b>ON</b><span>Built in Milverton, Ontario</span></div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services wrap" id="services">
+  <div class="section-head">
+    <p class="eyebrow">Services</p>
+    <h2>Everything electrical, <span class="hl">from hitch to tail.</span></h2>
+    <p>Pick one piece or the whole system. Every component is designed to work with the rest.</p>
+  </div>
+  <div class="svc-grid reveal">
+    <article class="svc">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 14h12c6 0 6 10 12 10h16M4 24h40M4 34h12c6 0 6-10 12-10"/><circle cx="44" cy="24" r="2.5"/></svg>
+      <h3>Wiring harnesses</h3>
+      <p>Custom-length main and branch harnesses, colour-coded and loomed, with sealed connections that stand up to road salt, spray and Ontario winters.</p>
+      <ul><li>Main trunk &amp; branch leads</li><li>Split loom &amp; protective sheathing</li><li>Heat-shrink sealed splices</li><li>Built to your drawing or ours</li></ul>
+    </article>
+    <article class="svc">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="16" width="32" height="16" rx="8"/><path d="M16 12V6M24 12V4M32 12V6M16 36v6M24 36v8M32 36v6"/></svg>
+      <h3>LED lighting kits <em>New</em></h3>
+      <p>Complete LED packages: stop, turn and tail, clearance, ID bars, side markers and licence lights, pre-matched to the harness.</p>
+      <ul><li>Tail &amp; stop/turn</li><li>Clearance &amp; ID bar</li><li>Side markers, front &amp; rear</li><li>Licence plate lighting</li></ul>
+    </article>
+    <article class="svc">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z"/><path d="M17 24l5 5 9-10"/></svg>
+      <h3>Breakaway safety kits <em>New</em></h3>
+      <p>Switch, lanyard, battery and charge line, wired into the brake circuit so the trailer brakes itself if it ever separates.</p>
+      <ul><li>Breakaway switch &amp; pin</li><li>Sealed breakaway battery</li><li>Charge line from tow vehicle</li><li>Mounting box &amp; hardware</li></ul>
+    </article>
+    <article class="svc">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="2.5"/><circle cx="24" cy="13" r="2.5"/><circle cx="33.5" cy="18.5" r="2.5"/><circle cx="33.5" cy="29.5" r="2.5"/><circle cx="24" cy="35" r="2.5"/><circle cx="14.5" cy="29.5" r="2.5"/><circle cx="14.5" cy="18.5" r="2.5"/></svg>
+      <h3>Plug &amp; play installation</h3>
+      <p>Pre-terminated, labelled and ready to clip together. Designed so your crew installs a full system quickly, without a wiring diagram taped to the wall.</p>
+      <ul><li>7-way RV blade plug &amp; cord</li><li>Keyed, labelled connectors</li><li>Junction box at the tongue</li><li>Install support by phone</li></ul>
+    </article>
+    <article class="svc">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 34h32M12 34V22a12 12 0 0 1 24 0v12"/><path d="M24 4v4M8 12l3 3M40 12l-3 3"/></svg>
+      <h3>Trailer lighting</h3>
+      <p>Interior LED strips, dome lights, porch lights over the side door and rear load lights that turn the trailer into a usable workspace after dark.</p>
+      <ul><li>Interior LED strips &amp; domes</li><li>Porch &amp; load lights</li><li>Switch panels by the door</li><li>Clean, hidden routing</li></ul>
+    </article>
+    <article class="svc">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="14" width="32" height="24" rx="3"/><path d="M38 22h4v8h-4M14 14v-4h6v4M26 14v-4h6v4M24 20l-5 8h6l-5 8"/></svg>
+      <h3>Power solutions</h3>
+      <p>12V battery boxes, charge lines from the tow vehicle, fusing and distribution, so lights and accessories run whether or not the truck is attached.</p>
+      <ul><li>Battery boxes &amp; mounting</li><li>Charge lines &amp; isolation</li><li>Fusing &amp; distribution</li><li>Accessory circuits</li></ul>
+    </article>
+  </div>
+</section>
+
+<!-- ============ COMPLETE KITS ============ -->
+<section class="kits" id="kits">
+  <div class="wrap kits-inner">
+    <div class="kits-copy">
+      <p class="eyebrow">Now including complete kits</p>
+      <h2>The whole system, <span class="hl">in one box.</span></h2>
+      <p>A Brookview complete kit is every electrical component an enclosed trailer needs, engineered together and matched to your trailer's size and layout. Open the box, follow the labels, plug it in.</p>
+      <ul class="ticks">
+        <li>Sized to your trailer: 5' singles to 8.5' wide car haulers</li>
+        <li>One part number, one supplier, one point of contact</li>
+        <li>Consistent from the first trailer to the hundredth</li>
+      </ul>
+      <a href="#quote" class="btn">Spec your kit</a>
+    </div>
+    <div class="kit-box reveal">
+      <div class="kit-lid"><span>BROOKVIEW</span><small>Complete trailer electrical kit</small></div>
+      <ul class="kit-list">
+        <li><i>01</i>Main wiring harness</li>
+        <li><i>02</i>Branch &amp; marker leads</li>
+        <li><i>03</i>LED stop / turn / tail lights</li>
+        <li><i>04</i>Clearance lights &amp; ID bar</li>
+        <li><i>05</i>Side marker lights</li>
+        <li><i>06</i>Licence plate light</li>
+        <li><i>07</i>7-way plug &amp; cord</li>
+        <li><i>08</i>Junction box</li>
+        <li><i>09</i>Breakaway switch, battery &amp; lanyard</li>
+        <li><i>10</i>Interior LED strips &amp; switch</li>
+        <li><i>11</i>Porch light</li>
+        <li><i>12</i>Grommets, clips &amp; hardware</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHO WE WORK WITH ============ -->
+<section class="who wrap">
+  <div class="section-head">
+    <p class="eyebrow">Who we build for</p>
+    <h2>From one-off builds <span class="hl">to production runs.</span></h2>
+  </div>
+  <div class="who-grid">
+    <div class="who-card reveal"><b>Trailer manufacturers</b><p>Repeatable harnesses and kits delivered on schedule, so your line never waits on wiring.</p></div>
+    <div class="who-card reveal"><b>Dealers &amp; upfitters</b><p>Lighting upgrades, interior packages and replacement harnesses for the units on your lot.</p></div>
+    <div class="who-card reveal"><b>Custom &amp; race builders</b><p>Concession, toy-hauler and race trailers with power and lighting built around how you use them.</p></div>
+    <div class="who-card reveal"><b>Fleets &amp; contractors</b><p>Standardised, serviceable wiring across every trailer you run, with parts that match.</p></div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How it works</p>
+      <h2>Spec to shipped, <span class="hl">without the guesswork.</span></h2>
+    </div>
+    <ol class="steps">
+      <li class="reveal"><span>01</span><h3>Spec</h3><p>Tell us the trailer: size, axle count, door layout and what you want lit and powered.</p></li>
+      <li class="reveal"><span>02</span><h3>Engineer</h3><p>We lay out circuits, lengths and connector points, and confirm the plan with you.</p></li>
+      <li class="reveal"><span>03</span><h3>Build</h3><p>Harnesses are cut, terminated, sealed and loomed by hand in our Milverton shop.</p></li>
+      <li class="reveal"><span>04</span><h3>Test</h3><p>Every circuit is continuity-checked and every kit is checked against its list.</p></li>
+      <li class="reveal"><span>05</span><h3>Plug in</h3><p>Labelled, plug-and-play kits ship or get picked up, ready to install.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ WHY ============ -->
+<section class="why wrap">
+  <div class="why-left">
+    <p class="eyebrow">Why Brookview</p>
+    <h2>Trailer wiring is the part people notice <span class="hl">only when it fails.</span></h2>
+    <p>So we build it like it can't. Clean routing, real protection and connections that are sealed, not taped.</p>
+  </div>
+  <div class="why-grid">
+    <div class="reveal"><h3>Built for Canadian roads</h3><p>Salt, slush, gravel and freeze-thaw. Sheathing and sealed connections are chosen for the conditions trailers actually see here.</p></div>
+    <div class="reveal"><h3>Designed as one system</h3><p>Harness, lights and power are specified together, so connectors match and every circuit is accounted for.</p></div>
+    <div class="reveal"><h3>Made in Ontario</h3><p>Designed and built in Milverton. Talk directly to the people building your harness.</p></div>
+    <div class="reveal"><h3>Faster installs</h3><p>Pre-terminated, labelled kits cut install time and the rework that comes from hand-wiring every unit.</p></div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq wrap" id="faq">
+  <div class="section-head">
+    <p class="eyebrow">FAQ</p>
+    <h2>Good questions.</h2>
+  </div>
+  <div class="faq-list">
+    <details><summary>Do you build harnesses for one trailer, or only in volume?</summary><p>Both. We build one-off custom harnesses and kits as well as repeat production runs for manufacturers and dealers.</p></details>
+    <details><summary>What trailer sizes do your complete kits fit?</summary><p>Kits are matched to the trailer, from small single-axle cargo trailers up to 8.5' wide tandem and car-hauler builds. Tell us the length, width and door layout and we'll spec it.</p></details>
+    <details><summary>What plug do your kits use at the tongue?</summary><p>Standard kits come with a 7-way RV blade plug and cord, the most common connector on North American tow vehicles. Other connectors are available on request.</p></details>
+    <details><summary>Can you add interior lighting and a battery to my trailer?</summary><p>Yes. Interior LED strips, porch and load lights, switch panels and 12V battery boxes with charge lines are all part of our lighting and power solutions.</p></details>
+    <details><summary>Do you install, or do you just supply the parts?</summary><p>Our kits are designed for plug-and-play installation by your own team, and we're available by phone to help. Contact us to discuss installation for your build.</p></details>
+    <details><summary>Where are you located?</summary><p>6602 Perth Rd 121, Milverton, Ontario N0K 1M0. Call ahead at 226-747-7684 before dropping by.</p></details>
+  </div>
+</section>
+
+<!-- ============ QUOTE ============ -->
+<section class="quote" id="quote">
+  <div class="wrap quote-inner">
+    <div class="quote-copy">
+      <p class="eyebrow">Request a quote</p>
+      <h2>Let's wire <span class="hl">your trailer.</span></h2>
+      <p>Tell us about your build and we'll get back to you with a plan. Prefer to talk? Give us a call.</p>
+      <div class="contact-cards">
+        <a href="tel:+12267477684" class="cc"><small>Phone</small><b>226-747-7684</b></a>
+        <a href="https://www.google.com/maps/search/?api=1&query=6602+Perth+Rd+121+Milverton+ON" target="_blank" rel="noopener" class="cc"><small>Shop</small><b>6602 Perth Rd 121<br/>Milverton, ON N0K 1M0</b></a>
+        <div class="cc"><small>Hours</small><b>Weekdays · closes 5 PM</b></div>
+      </div>
+    </div>
+    <form class="qform" id="qform" novalidate>
+      <div class="row2">
+        <label>Name<input name="name" required autocomplete="name" /></label>
+        <label><span>Company <span class="opt">(optional)</span></span><input name="company" autocomplete="organization" /></label>
+      </div>
+      <div class="row2">
+        <label>Email<input name="email" type="email" required autocomplete="email" /></label>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel" /></label>
+      </div>
+      <div class="row2">
+        <label>Trailer type
+          <select name="type"><option>Enclosed cargo</option><option>Car hauler</option><option>Concession</option><option>Toy hauler</option><option>Race trailer</option><option>Other / custom</option></select>
+        </label>
+        <label>Quantity
+          <select name="qty"><option>One trailer</option><option>2–10 trailers</option><option>Ongoing production</option></select>
+        </label>
+      </div>
+      <fieldset>
+        <legend>I'm interested in</legend>
+        <div class="checks">
+          <label><input type="checkbox" checked /> Complete kit</label>
+          <label><input type="checkbox" /> Wiring harness</label>
+          <label><input type="checkbox" /> LED lighting</label>
+          <label><input type="checkbox" /> Breakaway kit</label>
+          <label><input type="checkbox" /> Interior lighting</label>
+          <label><input type="checkbox" /> Power / battery</label>
+        </div>
+      </fieldset>
+      <label>Tell us about the build<textarea name="msg" rows="4" placeholder="Size (e.g. 7×16 tandem), door layout, lighting you want..."></textarea></label>
+      <button class="btn btn-block" type="submit">Send request</button>
+      <p class="form-note" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<section class="map-wrap">
+  <iframe title="Map to Brookview Industries" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=6602+Perth+Rd+121,+Milverton,+ON+N0K+1M0&z=12&output=embed"></iframe>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-inner">
+    <div>
+      <a href="#top" class="brand"><svg viewBox="0 0 32 32" class="brand-mark" aria-hidden="true"><path d="M8 5h9a5.5 5.5 0 0 1 0 11H8zM8 16h10a5.5 5.5 0 0 1 0 11H8z" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="8" cy="5" r="2.2" fill="#ff7a1a"/><circle cx="8" cy="27" r="2.2" fill="#ff7a1a"/></svg><span class="brand-text"><b>BROOKVIEW</b><small>INDUSTRIES</small></span></a>
+      <p class="foot-tag">Precision trailer wiring, built in Milverton, Ontario.</p>
+    </div>
+    <div class="foot-cols">
+      <div><h4>Services</h4><a href="#services">Wiring harnesses</a><a href="#services">LED lighting kits</a><a href="#services">Breakaway safety kits</a><a href="#services">Power solutions</a><a href="#kits">Complete kits</a></div>
+      <div><h4>Contact</h4><a href="tel:+12267477684">226-747-7684</a><span>6602 Perth Rd 121</span><span>Milverton, ON N0K 1M0</span></div>
+    </div>
+  </div>
+  <div class="wrap foot-base"><span>© <span id="yr">2026</span> Brookview Industries</span><span>Concept site</span></div>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
+</html>
