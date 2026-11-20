@@ -93,8 +93,8 @@ renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color(0x07090d);
-scene.fog = new THREE.Fog(0x07090d, 26, 60);
+scene.background = new THREE.Color(0x05080f);
+scene.fog = new THREE.Fog(0x05080f, 26, 60);
 const pmrem = new THREE.PMREMGenerator(renderer);
 scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
 scene.environmentIntensity = 0.55;
@@ -110,7 +110,7 @@ moon.shadow.mapSize.set(2048, 2048);
 Object.assign(moon.shadow.camera, { left: -9, right: 9, top: 9, bottom: -9, near: 1, far: 40 });
 moon.shadow.bias = -0.0005;
 scene.add(moon);
-const rim = new THREE.DirectionalLight(0xff8a3a, 1.4);
+const rim = new THREE.DirectionalLight(0x2b6cff, 1.1);
 rim.position.set(-10, 4, -8);
 scene.add(rim);
 
@@ -119,7 +119,7 @@ const groundTex = (() => {
   const c = document.createElement('canvas'); c.width = c.height = 512;
   const g = c.getContext('2d');
   const grd = g.createRadialGradient(256, 256, 0, 256, 256, 256);
-  grd.addColorStop(0, '#1a2130'); grd.addColorStop(0.55, '#0c1018'); grd.addColorStop(1, '#07090d');
+  grd.addColorStop(0, '#132544'); grd.addColorStop(0.55, '#0a1222'); grd.addColorStop(1, '#05080f');
   g.fillStyle = grd; g.fillRect(0, 0, 512, 512);
   g.strokeStyle = 'rgba(255,255,255,0.05)'; g.lineWidth = 1;
   for (let i = 0; i <= 512; i += 21.33) { g.beginPath(); g.moveTo(i, 0); g.lineTo(i, 512); g.stroke(); g.beginPath(); g.moveTo(0, i); g.lineTo(512, i); g.stroke(); }
@@ -212,14 +212,14 @@ box(0.06, 0.18, 0.04, rimMat, 1.5, BASE + 1.05, ZS + 0.05);
 function decalTex() {
   const c = document.createElement('canvas'); c.width = 1024; c.height = 256;
   const g = c.getContext('2d');
-  g.fillStyle = '#ff7a1a';
+  g.fillStyle = '#dd6216';
   g.beginPath(); g.moveTo(0, 200); g.lineTo(1024, 150); g.lineTo(1024, 172); g.lineTo(0, 232); g.fill();
-  g.fillStyle = '#0b111c';
+  g.fillStyle = '#006ffc';
   g.beginPath(); g.moveTo(0, 236); g.lineTo(1024, 178); g.lineTo(1024, 192); g.lineTo(0, 252); g.fill();
   g.font = '800 118px "Barlow Condensed", Arial Narrow, sans-serif';
-  g.fillStyle = '#0b111c'; g.fillText('BROOKVIEW', 24, 118);
+  g.fillStyle = '#012e66'; g.fillText('BROOKVIEW', 24, 118);
   g.font = '600 40px "Barlow Condensed", Arial Narrow, sans-serif';
-  g.fillStyle = '#ff7a1a'; g.fillText('INDUSTRIES  ·  PRECISION TRAILER WIRING', 28, 168);
+  g.fillStyle = '#006ffc'; g.fillText('INDUSTRIES  ·  PRECISION TRAILER WIRING', 28, 168);
   const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; return t;
 }
 const decalMat = new THREE.MeshStandardMaterial({ map: decalTex(), transparent: true, roughness: 0.4, metalness: 0.2, polygonOffset: true, polygonOffsetFactor: -2 });
@@ -259,7 +259,7 @@ const wheels = [];
 
 // tongue gear: battery box, breakaway, junction
 const batt = box(0.34, 0.28, 0.24, darkMat, 3.95, 0.87, 0.36);
-box(0.35, 0.03, 0.25, new THREE.MeshStandardMaterial({ color: 0xff7a1a, emissive: 0x401800 }), 3.95, 1.02, 0.36);
+box(0.35, 0.03, 0.25, new THREE.MeshStandardMaterial({ color: 0xdd6216, emissive: 0x3a1500 }), 3.95, 1.02, 0.36);
 const brk = box(0.1, 0.12, 0.08, darkMat, 4.18, 0.78, -0.36);
 const pin = new THREE.Mesh(new THREE.CylinderGeometry(0.015, 0.015, 0.06, 8), new THREE.MeshStandardMaterial({ color: 0xff2a2a, emissive: 0xff2a2a, emissiveIntensity: 0.6 })); pin.rotation.z = Math.PI / 2; pin.position.set(4.25, 0.78, -0.36); G.add(pin);
 box(0.14, 0.1, 0.1, darkMat, 3.82, 0.8, -0.2); // junction box
@@ -318,11 +318,11 @@ const pulseTex = (() => {
   const c = document.createElement('canvas'); c.width = 256; c.height = 4;
   const g = c.getContext('2d');
   const grd = g.createLinearGradient(0, 0, 256, 0);
-  grd.addColorStop(0, '#000'); grd.addColorStop(0.7, '#2a1000'); grd.addColorStop(0.92, '#ffb066'); grd.addColorStop(1, '#000');
+  grd.addColorStop(0, '#000'); grd.addColorStop(0.7, '#001a44'); grd.addColorStop(0.92, '#8fc0ff'); grd.addColorStop(1, '#000');
   g.fillStyle = grd; g.fillRect(0, 0, 256, 4);
   const t = new THREE.CanvasTexture(c); t.wrapS = t.wrapT = THREE.RepeatWrapping; return t;
 })();
-const harnessMat = new THREE.MeshStandardMaterial({ color: 0x141414, roughness: 0.6, emissive: 0xff7a1a, emissiveMap: pulseTex, emissiveIntensity: 0.6 });
+const harnessMat = new THREE.MeshStandardMaterial({ color: 0x141414, roughness: 0.6, emissive: 0x2b85ff, emissiveMap: pulseTex, emissiveIntensity: 0.6 });
 const harnessBase = new THREE.MeshStandardMaterial({ color: 0x0f0f10, roughness: 0.55, emissive: 0xff5a00, emissiveIntensity: 0 });
 function wire(pts, r = 0.022, reps = 6) {
   const curve = new THREE.CatmullRomCurve3(pts.map(p => new THREE.Vector3(...p)), false, 'centripetal');
@@ -350,7 +350,7 @@ G.add(lanyard);
 // 7-way plug end
 const plug = new THREE.Mesh(new THREE.CylinderGeometry(0.055, 0.045, 0.14, 20), darkMat);
 plug.rotation.z = Math.PI / 2 - 0.4; plug.position.set(4.8, 0.45, -0.22); G.add(plug);
-const plugRing = new THREE.Mesh(new THREE.TorusGeometry(0.058, 0.01, 8, 28), new THREE.MeshStandardMaterial({ color: 0xff7a1a, emissive: 0xff7a1a, emissiveIntensity: 1 }));
+const plugRing = new THREE.Mesh(new THREE.TorusGeometry(0.058, 0.01, 8, 28), new THREE.MeshStandardMaterial({ color: 0x2b85ff, emissive: 0x2b85ff, emissiveIntensity: 1 }));
 plugRing.rotation.y = Math.PI / 2; plugRing.rotation.x = 0.4; plugRing.position.set(4.86, 0.48, -0.22); G.add(plugRing);
 
 /* ---------------- open utility trailer ---------------- */
@@ -433,7 +433,7 @@ const fenderMat = new THREE.MeshStandardMaterial({ color: 0x9aa2ad, metalness: 0
 });
 // tongue gear
 box(0.32, 0.26, 0.22, darkMat, 3.25, DECK - 0.02, 0.4);
-box(0.33, 0.03, 0.23, new THREE.MeshStandardMaterial({ color: 0xff7a1a, emissive: 0x401800 }), 3.25, DECK + 0.12, 0.4);
+box(0.33, 0.03, 0.23, new THREE.MeshStandardMaterial({ color: 0xdd6216, emissive: 0x3a1500 }), 3.25, DECK + 0.12, 0.4);
 box(0.1, 0.12, 0.08, darkMat, 3.75, 0.66, -0.4);
 const oPin = new THREE.Mesh(new THREE.CylinderGeometry(0.015, 0.015, 0.06, 8), pin.material); oPin.rotation.z = Math.PI / 2; oPin.position.set(3.82, 0.66, -0.4); openT.add(oPin);
 openT.add(new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([[3.82, 0.66, -0.4], [4.05, 0.42, -0.3], [4.3, 0.36, -0.12], [4.42, 0.44, -0.05]].map(p => new THREE.Vector3(...p))), 40, 0.008, 6), lanyard.material));
