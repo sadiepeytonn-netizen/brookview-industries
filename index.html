@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Brookview Industries | Precision Trailer Wiring · Milverton, Ontario</title>
-<meta name="description" content="Brookview Industries builds custom wiring harnesses, LED lighting kits, breakaway safety kits and complete plug-and-play electrical kits for enclosed trailers. Milverton, Ontario." />
+<title>Brookview Industries | Enclosed &amp; Open Trailer Wiring · Milverton, Ontario</title>
+<meta name="description" content="Brookview Industries builds custom wiring harnesses, LED lighting kits, breakaway safety kits and complete plug-and-play electrical kits for enclosed and open trailers. Milverton, Ontario." />
 <meta property="og:title" content="Brookview Industries | Precision Trailer Wiring" />
-<meta property="og:description" content="Wiring harnesses, LED lighting, breakaway kits and complete plug-and-play electrical kits for enclosed trailers. Built in Milverton, Ontario." />
+<meta property="og:description" content="Wiring harnesses, LED lighting, breakaway kits and complete plug-and-play electrical kits for enclosed and open trailers. Built in Milverton, Ontario." />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b111c'/%3E%3Cpath d='M9 7h8a5 5 0 0 1 0 10H9zM9 17h9a5 5 0 0 1 0 10H9z' fill='none' stroke='%23ff7a1a' stroke-width='3'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,7 +27,7 @@
     <span class="brand-text"><b>BROOKVIEW</b><small>INDUSTRIES</small></span>
   </a>
   <nav class="nav-links" aria-label="Primary">
-    <a href="#tour">The Build</a>
+    <a href="#tour">Trailers</a>
     <a href="#services">Services</a>
     <a href="#kits">Complete Kits</a>
     <a href="#process">Process</a>
@@ -41,71 +41,38 @@
 </header>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#tour">The Build</a><a href="#services">Services</a><a href="#kits">Complete Kits</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#quote">Request a quote</a>
+  <a href="#tour">Trailers</a><a href="#services">Services</a><a href="#kits">Complete Kits</a><a href="#process">Process</a><a href="#faq">FAQ</a><a href="#quote">Request a quote</a>
   <a href="tel:+12267477684" class="mm-phone">Call 226-747-7684</a>
 </div>
 
 <main id="top">
 
-<!-- ============ SCROLL TOUR ============ -->
-<section class="tour" id="tour" data-steps="7">
-  <i class="snap" style="top:calc(0 * var(--step))"></i><i class="snap" style="top:calc(1 * var(--step))"></i><i class="snap" style="top:calc(2 * var(--step))"></i><i class="snap" style="top:calc(3 * var(--step))"></i><i class="snap" style="top:calc(4 * var(--step))"></i><i class="snap" style="top:calc(5 * var(--step))"></i><i class="snap" style="top:calc(6 * var(--step))"></i>
+<!-- ============ HERO: ENCLOSED → OPEN ============ -->
+<section class="tour" id="tour">
+  <i class="snap" style="top:0"></i><i class="snap" style="top:var(--step)"></i>
   <div class="stage">
-    <canvas id="scene" aria-label="Interactive 3D model of an enclosed trailer with lighting and wiring"></canvas>
+    <canvas id="scene" aria-label="3D enclosed and open trailers with labelled wiring and lighting"></canvas>
     <div class="stage-vignette"></div>
+    <div class="kind-words" data-kind="0" aria-hidden="true"><span>Enclosed</span><span>Open</span></div>
+    <div class="tags" id="tags" aria-hidden="true"><svg id="tagLines" preserveAspectRatio="none"></svg></div>
     <div class="stage-grain"></div>
 
-    <div class="hero-copy step" data-step="0">
+    <div class="hero-copy">
       <p class="eyebrow"><span class="dot"></span>Precision trailer wiring · Milverton, Ontario</p>
       <h1>Wired right.<br/><span class="hl">Lit up.</span><br/>Ready to roll.</h1>
-      <p class="lede">Brookview Industries builds wiring harnesses, LED lighting and complete electrical kits for enclosed trailers, engineered to plug in and work the first time.</p>
+      <div class="kind-tabs" role="tablist" aria-label="Trailer type">
+        <button class="on" role="tab" aria-selected="true"><i>01</i>Enclosed trailers</button>
+        <button role="tab" aria-selected="false"><i>02</i>Open trailers</button>
+      </div>
+      <div class="kind-texts">
+        <p class="lede kind-text on">Harnesses, LED lighting, breakaway kits and interior power for enclosed cargo, car-hauler and race trailers, built to plug in and work the first time.</p>
+        <p class="lede kind-text">Open utility, landscape and car-hauler trailers get the same care: sealed harnesses routed along the frame, LED lighting and a 7-way plug at the tongue.</p>
+      </div>
       <div class="cta-row">
         <a href="#quote" class="btn">Request a quote</a>
         <a href="#services" class="btn btn-ghost">What we build</a>
       </div>
     </div>
-
-    <article class="step card" data-step="1">
-      <p class="step-num">01 / Wiring harnesses</p>
-      <h2>The nervous system of every trailer.</h2>
-      <p>Custom harnesses built to your trailer's exact length and layout: colour-coded, loomed, sealed at every connection and continuity-tested before they leave the shop.</p>
-      <ul class="chips"><li>Cut to length</li><li>Sealed connectors</li><li>Protective sheathing</li><li>Bench tested</li></ul>
-    </article>
-
-    <article class="step card" data-step="2">
-      <p class="step-num">02 / LED lighting kits</p>
-      <h2>Every light, every circuit, all LED.</h2>
-      <p>Stop, turn and tail, clearance and ID bars, side markers and licence lighting, laid out properly and matched to the harness so nothing is guesswork.</p>
-      <ul class="chips"><li>Stop · Turn · Tail</li><li>Clearance &amp; ID</li><li>Side markers</li><li>Low current draw</li></ul>
-    </article>
-
-    <article class="step card" data-step="3">
-      <p class="step-num">03 / Breakaway safety kits</p>
-      <h2>If the hitch lets go, the brakes don't.</h2>
-      <p>Breakaway switch, lanyard, battery and charge line, pre-wired into the brake circuit so the trailer locks up on its own if it ever separates from the tow vehicle.</p>
-      <ul class="chips"><li>Switch &amp; lanyard</li><li>Breakaway battery</li><li>Charge line</li><li>Brake-circuit ready</li></ul>
-    </article>
-
-    <article class="step card" data-step="4">
-      <p class="step-num">04 / Plug &amp; play installation</p>
-      <h2>Connect it. Clip it. Done.</h2>
-      <p>Pre-terminated leads, labelled branches and a standard 7-way RV blade plug at the tongue. Kits drop in fast, whether you're building one trailer or a production line.</p>
-      <ul class="chips"><li>7-way RV blade</li><li>Pre-terminated</li><li>Labelled branches</li><li>Hours, not days</li></ul>
-    </article>
-
-    <article class="step card" data-step="5">
-      <p class="step-num">05 / Lighting &amp; power solutions</p>
-      <h2>Light the inside like you mean it.</h2>
-      <p>Interior LED strips, porch and load lights, switch panels and 12V battery systems with charge lines, so the trailer works for you after dark and away from the truck.</p>
-      <ul class="chips"><li>Interior LED</li><li>Porch &amp; load lights</li><li>12V battery boxes</li><li>Switch panels</li></ul>
-    </article>
-
-    <article class="step card" data-step="6">
-      <p class="step-num">06 / Complete kits</p>
-      <h2>One box. Everything. Matched to your trailer.</h2>
-      <p>Harness, lights, breakaway, plug and power, engineered together as one system and shipped as a complete kit. No sourcing from five suppliers. No mismatched parts.</p>
-      <a href="#quote" class="btn">Spec a complete kit</a>
-    </article>
 
     <div class="stage-ui">
       <div class="toggles" role="group" aria-label="Trailer lighting controls">
@@ -113,20 +80,10 @@
         <button class="tgl" data-toggle="hazards" aria-pressed="false"><i></i>Hazards</button>
         <button class="tgl" data-toggle="xray" aria-pressed="false"><i></i>X-ray</button>
       </div>
-      <p class="drag-hint">Drag to rotate</p>
+      <p class="drag-hint">Drag to spin</p>
     </div>
 
-    <ol class="rail" aria-label="Tour progress">
-      <li data-go="0"><span>Intro</span></li>
-      <li data-go="1"><span>Harness</span></li>
-      <li data-go="2"><span>LED</span></li>
-      <li data-go="3"><span>Breakaway</span></li>
-      <li data-go="4"><span>Plug &amp; play</span></li>
-      <li data-go="5"><span>Power</span></li>
-      <li data-go="6"><span>Complete</span></li>
-    </ol>
-
-    <div class="scroll-cue"><span>Scroll to take the tour</span><i></i></div>
+    <div class="scroll-cue"><span>Scroll for open trailers</span><i></i></div>
     <div class="fallback" hidden><p>Your browser couldn't start the 3D view, but the rest of the site works fine.</p></div>
   </div>
 </section>
@@ -134,15 +91,15 @@
 <!-- ============ MARQUEE ============ -->
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    <span>Wiring harnesses</span><b>✦</b><span>LED lighting kits</span><b>✦</b><span>Breakaway safety kits</span><b>✦</b><span>Plug &amp; play installation</span><b>✦</b><span>Trailer lighting</span><b>✦</b><span>Power solutions</span><b>✦</b><span>Complete kits</span><b>✦</b>
-    <span>Wiring harnesses</span><b>✦</b><span>LED lighting kits</span><b>✦</b><span>Breakaway safety kits</span><b>✦</b><span>Plug &amp; play installation</span><b>✦</b><span>Trailer lighting</span><b>✦</b><span>Power solutions</span><b>✦</b><span>Complete kits</span><b>✦</b>
+    <span>Enclosed &amp; open trailers</span><b>✦</b><span>Wiring harnesses</span><b>✦</b><span>LED lighting kits</span><b>✦</b><span>Breakaway safety kits</span><b>✦</b><span>Plug &amp; play installation</span><b>✦</b><span>Trailer lighting</span><b>✦</b><span>Power solutions</span><b>✦</b><span>Complete kits</span><b>✦</b>
+    <span>Enclosed &amp; open trailers</span><b>✦</b><span>Wiring harnesses</span><b>✦</b><span>LED lighting kits</span><b>✦</b><span>Breakaway safety kits</span><b>✦</b><span>Plug &amp; play installation</span><b>✦</b><span>Trailer lighting</span><b>✦</b><span>Power solutions</span><b>✦</b><span>Complete kits</span><b>✦</b>
   </div>
 </div>
 
 <!-- ============ INTRO ============ -->
 <section class="intro wrap">
   <p class="eyebrow">About Brookview</p>
-  <p class="big-statement reveal">We're an Ontario shop that does one thing obsessively well: <span class="hl">the electrical side of enclosed trailers.</span> From a single custom build to steady production runs, every harness and kit is designed, built and tested under one roof in Milverton.</p>
+  <p class="big-statement reveal">We're an Ontario shop that does one thing obsessively well: <span class="hl">the electrical side of trailers, enclosed and open.</span> From a single custom build to steady production runs, every harness and kit is designed, built and tested under one roof in Milverton.</p>
   <div class="facts reveal">
     <div><b>12V</b><span>Trailer lighting &amp; power systems</span></div>
     <div><b>7-way</b><span>RV blade, ready at the tongue</span></div>
@@ -156,7 +113,7 @@
   <div class="section-head">
     <p class="eyebrow">Services</p>
     <h2>Everything electrical, <span class="hl">from hitch to tail.</span></h2>
-    <p>Pick one piece or the whole system. Every component is designed to work with the rest.</p>
+    <p>Enclosed or open, pick one piece or the whole system. Every component is designed to work with the rest.</p>
   </div>
   <div class="svc-grid reveal">
     <article class="svc">
@@ -204,9 +161,9 @@
     <div class="kits-copy">
       <p class="eyebrow">Now including complete kits</p>
       <h2>The whole system, <span class="hl">in one box.</span></h2>
-      <p>A Brookview complete kit is every electrical component an enclosed trailer needs, engineered together and matched to your trailer's size and layout. Open the box, follow the labels, plug it in.</p>
+      <p>A Brookview complete kit is every electrical component your trailer needs, enclosed or open, engineered together and matched to your trailer's size and layout. Open the box, follow the labels, plug it in.</p>
       <ul class="ticks">
-        <li>Sized to your trailer: 5' singles to 8.5' wide car haulers</li>
+        <li>Sized to your trailer: open utility and landscape trailers up to 8.5' wide enclosed car haulers</li>
         <li>One part number, one supplier, one point of contact</li>
         <li>Consistent from the first trailer to the hundredth</li>
       </ul>
@@ -224,8 +181,8 @@
         <li><i>07</i>7-way plug &amp; cord</li>
         <li><i>08</i>Junction box</li>
         <li><i>09</i>Breakaway switch, battery &amp; lanyard</li>
-        <li><i>10</i>Interior LED strips &amp; switch</li>
-        <li><i>11</i>Porch light</li>
+        <li><i>10</i>Interior LED strips &amp; switch <em>(enclosed)</em></li>
+        <li><i>11</i>Porch light <em>(enclosed)</em></li>
         <li><i>12</i>Grommets, clips &amp; hardware</li>
       </ul>
     </div>
@@ -241,7 +198,7 @@
   <div class="who-grid">
     <div class="who-card reveal"><b>Trailer manufacturers</b><p>Repeatable harnesses and kits delivered on schedule, so your line never waits on wiring.</p></div>
     <div class="who-card reveal"><b>Dealers &amp; upfitters</b><p>Lighting upgrades, interior packages and replacement harnesses for the units on your lot.</p></div>
-    <div class="who-card reveal"><b>Custom &amp; race builders</b><p>Concession, toy-hauler and race trailers with power and lighting built around how you use them.</p></div>
+    <div class="who-card reveal"><b>Custom &amp; race builders</b><p>Concession, toy-hauler, race, landscape and utility trailers, with power and lighting built around how you use them.</p></div>
     <div class="who-card reveal"><b>Fleets &amp; contractors</b><p>Standardised, serviceable wiring across every trailer you run, with parts that match.</p></div>
   </div>
 </section>
@@ -286,7 +243,8 @@
   </div>
   <div class="faq-list">
     <details><summary>Do you build harnesses for one trailer, or only in volume?</summary><p>Both. We build one-off custom harnesses and kits as well as repeat production runs for manufacturers and dealers.</p></details>
-    <details><summary>What trailer sizes do your complete kits fit?</summary><p>Kits are matched to the trailer, from small single-axle cargo trailers up to 8.5' wide tandem and car-hauler builds. Tell us the length, width and door layout and we'll spec it.</p></details>
+    <details><summary>Do you wire open trailers too, or just enclosed?</summary><p>Both. Open utility, landscape, flatdeck and car-hauler trailers get the same sealed harnesses, LED lighting, 7-way plug and breakaway kits as our enclosed builds. Interior lighting and porch lights are specific to enclosed trailers.</p></details>
+    <details><summary>What trailer sizes do your complete kits fit?</summary><p>Kits are matched to the trailer, from small single-axle open and cargo trailers up to 8.5' wide tandem and car-hauler builds. Tell us the length, width and door layout and we'll spec it.</p></details>
     <details><summary>What plug do your kits use at the tongue?</summary><p>Standard kits come with a 7-way RV blade plug and cord, the most common connector on North American tow vehicles. Other connectors are available on request.</p></details>
     <details><summary>Can you add interior lighting and a battery to my trailer?</summary><p>Yes. Interior LED strips, porch and load lights, switch panels and 12V battery boxes with charge lines are all part of our lighting and power solutions.</p></details>
     <details><summary>Do you install, or do you just supply the parts?</summary><p>Our kits are designed for plug-and-play installation by your own team, and we're available by phone to help. Contact us to discuss installation for your build.</p></details>
@@ -318,7 +276,7 @@
       </div>
       <div class="row2">
         <label>Trailer type
-          <select name="type"><option>Enclosed cargo</option><option>Car hauler</option><option>Concession</option><option>Toy hauler</option><option>Race trailer</option><option>Other / custom</option></select>
+          <select name="type"><option>Enclosed cargo</option><option>Open utility / landscape</option><option>Car hauler (open)</option><option>Car hauler (enclosed)</option><option>Concession</option><option>Toy hauler</option><option>Race trailer</option><option>Other / custom</option></select>
         </label>
         <label>Quantity
           <select name="qty"><option>One trailer</option><option>2–10 trailers</option><option>Ongoing production</option></select>
@@ -335,7 +293,7 @@
           <label><input type="checkbox" /> Power / battery</label>
         </div>
       </fieldset>
-      <label>Tell us about the build<textarea name="msg" rows="4" placeholder="Size (e.g. 7×16 tandem), door layout, lighting you want..."></textarea></label>
+      <label>Tell us about the build<textarea name="msg" rows="4" placeholder="Open or enclosed, size (e.g. 7×16 tandem), door layout, lighting you want..."></textarea></label>
       <button class="btn btn-block" type="submit">Send request</button>
       <p class="form-note" role="status" aria-live="polite"></p>
     </form>
