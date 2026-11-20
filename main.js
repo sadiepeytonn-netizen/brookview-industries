@@ -425,7 +425,7 @@ box(0.38, 0.13, 0.17, blackMat, 4.25, 0.5, 0);
     w.add(tire, rm, hub); w.position.set(x, 0.36, sd * 1.16); openT.add(w);
   });
 });
-const fenderMat = rimMat.clone(); fenderMat.side = THREE.DoubleSide;
+const fenderMat = new THREE.MeshStandardMaterial({ color: 0x9aa2ad, metalness: 0.8, roughness: 0.55, side: THREE.DoubleSide });
 [-1, 1].forEach(sd => {
   const f = new THREE.Mesh(new THREE.CylinderGeometry(0.5, 0.5, 0.3, 40, 1, true, -Math.PI / 2, Math.PI), fenderMat);
   f.rotation.x = -Math.PI / 2; f.scale.set(1.75, 1, 0.82); f.position.set(-0.225, 0.4, sd * 1.16); f.castShadow = true; openT.add(f);
@@ -455,8 +455,6 @@ lamp('white', new THREE.BoxGeometry(0.04, 0.03, 0.12), OL0 - 0.1, oY - 0.04, 0.3
 [-1, 1].forEach(sd => lamp('amber', new THREE.BoxGeometry(OL1 - OL0 - 0.3, 0.015, 0.02), (OL0 + OL1) / 2, DECK - 0.2, sd * (OW + 0.045)));
 spillLight('red', 0xff2020, 6, 5, OL0 - 0.7, oY, 0.8);
 spillLight('red', 0xff2020, 6, 5, OL0 - 0.7, oY, -0.8);
-spillLight('amber', 0xff9a1f, 2.5, 3.5, 0, 0.35, OW + 0.5);
-spillLight('amber', 0xff9a1f, 2.5, 3.5, 0, 0.35, -OW - 0.5);
 // harness along the frame
 [-1, 1].forEach(sd => wire([[3.75, 0.62, -0.3], [3.3, 0.62, sd * 0.45], [2.8, 0.64, sd * 0.85], [OL1 - 0.1, 0.64, sd * (OW + 0.05)], [OL0 + 0.15, 0.64, sd * (OW + 0.05)], [OL0 - 0.05, oY - 0.02, sd * 0.88]]));
 wire([[OL0 - 0.04, oY - 0.05, -0.88], [OL0 - 0.04, oY - 0.06, 0.88]]);
